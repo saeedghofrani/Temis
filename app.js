@@ -1,14 +1,14 @@
-var express = require('express');
-var logger = require('morgan');
+const express = require('express');
+const logger = require('morgan');
 const createError = require('http-errors');
 
-var appRouter = require('./routes/app.route');
+const appRouter = require('./routes/app.route');
 /**
  * database connection
  */
 require("./db/connection.db");
 
-var app = express();
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
