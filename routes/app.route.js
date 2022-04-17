@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 //Junction Box
-const userRouter = require('./user.route.js');
+const authenticationRouter = require('./authentication.route.js');
 
 //route and address 
-router.use('/user', userRouter);
+router.use('/authentication', authenticationRouter);
 
 module.exports = router;
