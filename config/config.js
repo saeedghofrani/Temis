@@ -16,6 +16,13 @@ const development = {
         port: process.env.DEV_DB_PORT || 27017,
         name: process.env.DEV_DB_NAME || 'ESTER'
     },
+    //user information for first run
+    user: {
+        first_name: process.env.USER_FIRSTNAME,
+        last_name: process.env.USER_LASTNAME,
+        username: process.env.USER_USERNAME,
+        password: process.env.USER_PASSWORD,
+    }
 };
 
 const config = {
